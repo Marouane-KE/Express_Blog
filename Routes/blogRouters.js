@@ -2,6 +2,8 @@ const express = require('express')
 const router = express.Router();
 const axios = require('axios');
 const multer = require('multer')
+const {createBlog}=require('../Controllers/blogcontroller')
+
 // Configure Multer
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
@@ -17,16 +19,9 @@ const storage = multer.diskStorage({
 router.get('/addBlog',(req,res)=>{
     res.render('addBlog')
 })
-router.post('/createBlog' ,upload.single('image'),(req,res)=>{
-    
-    const {title,author,description}=req.body;
-    const image=req.file
-    console.log(image)
-    axios.post('http://localhost:8100/blogs',{title,author,description,image:image.filename})
+router.post('/createBlog' ,upload.single('image'),createBlog)
 
-    res.render('allBlogs')
-})
-
+router.get('/')
 
 
 
