@@ -1,0 +1,19 @@
+{
+  "blogs": [
+    {
+      "title": "kjgkj",
+      "author": "kgkhjg",
+      "description": "jhgjh",
+      "image": "1694507289047-edit.png",
+      "id": 1
+    },
+    {
+      "title": "fd",
+      "author": "ghjg",
+      "description": "ghghj",
+      "image": "1694507369059-collaboration.png",
+      "id": 2
+    }
+  ],
+  "users": []
+}
