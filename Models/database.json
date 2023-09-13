@@ -1,95 +1,18 @@
 {
   "blogs": [
     {
-      "title": "kjgkj",
-      "author": "kgkhjg",
-      "description": "jhgjh",
-      "image": "1694507289047-edit.png",
+      "title": "Travling",
+      "author": "Batota",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ",
+      "image": "1694600962086-LogoCamel2.png",
       "id": 1
     },
     {
-      "title": "fd",
-      "author": "ghjg",
-      "description": "ghghj",
-      "image": "1694507369059-collaboration.png",
+      "title": "jh",
+      "author": "trdh",
+      "description": "hgfg",
+      "image": "1694604184893-js.png",
       "id": 2
-    },
-    {
-      "title": "aa",
-      "author": "zea",
-      "description": "eafda",
-      "image": "1694515435269-collaboration.png",
-      "id": 3
-    },
-    {
-      "title": "aazzzddd",
-      "author": "dd",
-      "description": "ddd",
-      "image": "1694518910289-edit.png",
-      "id": 4
-    },
-    {
-      "title": "ccc",
-      "author": "cc",
-      "description": "ccc",
-      "image": "1694518943504-edit.png",
-      "id": 5
-    },
-    {
-      "title": "ccc",
-      "author": "cc",
-      "description": "ccc",
-      "image": "1694518943921-edit.png",
-      "id": 6
-    },
-    {
-      "title": "Rim",
-      "author": "marwan",
-      "description": "nopusa",
-      "image": "1694527669093-check (1).png",
-      "id": 7
-    },
-    {
-      "title": "zaea",
-      "author": "eza",
-      "description": "zerz",
-      "image": "1694527752684-atom.png",
-      "id": 8
-    },
-    {
-      "title": "ana",
-      "author": "ana",
-      "description": "nana",
-      "image": "1694527946659-ARA7ALA.png",
-      "id": 9
-    },
-    {
-      "title": "eazerd",
-      "author": "ezgzfz",
-      "description": "zefzfzef",
-      "image": "1694528168399-idea (1).png",
-      "id": 10
-    },
-    {
-      "title": "ddd",
-      "author": "ddd",
-      "description": "dd",
-      "image": "1694528227169-collaboration.png",
-      "id": 11
-    },
-    {
-      "title": "ddd",
-      "author": "ddd",
-      "description": "dd",
-      "image": "1694528227598-collaboration.png",
-      "id": 12
-    },
-    {
-      "title": "dfgbdfg",
-      "author": "jhdf",
-      "description": "hkfv",
-      "image": "1694528288251-IMG_2676.jpg",
-      "id": 13
     }
   ],
   "users": [
@@ -116,6 +39,22 @@
       "email": "zzd@d.d",
       "avatar": "1694565442593-browser.png",
       "id": 5
+    },
+    {
+      "userId": "lmhiinv2p23laalju19",
+      "username": "zazea",
+      "password": "$2b$10$VCqakkdVfP.w9x154DjUSe1J2PA42k9eb20sWzIFMtzz9Xa7aDenu",
+      "email": "kamale.elidrissi@gmail.com",
+      "avatar": "1694595686219-collaboration.png",
+      "id": 6
+    },
+    {
+      "userId": "lmhnjogcx428307jhzd",
+      "username": "rim",
+      "password": "$2b$10$b/R72qtC/IrU3vcdoM0e3OFd/BERYXZUqMIv8Nm3AMQCmX6uJKZMu",
+      "email": "rimlamnaouar@gmail.com",
+      "avatar": "1694604131722-atom.png",
+      "id": 7
     }
   ]
 }
