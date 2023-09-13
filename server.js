@@ -8,9 +8,9 @@ app.set('view engine', 'ejs')
 app.use(express.static('Public'))
 
 
-const blogRouters = require('./Routes/blogRouters')
+const Routers = require('./Routes/routers')
 
-app.use('/',blogRouters)
+app.use('/',Routers)
 
 
 

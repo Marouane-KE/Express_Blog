@@ -92,5 +92,30 @@
       "id": 13
     }
   ],
-  "users": []
+  "users": [
+    {
+      "userId": "lmgzqqrxhkimfcvakal",
+      "username": "rom",
+      "password": "aa",
+      "email": "r@i.m",
+      "avatar": "1694564150537-collaboration.png",
+      "id": 3
+    },
+    {
+      "userId": "lmh0gtbcq39z28a9ads",
+      "username": "mar",
+      "password": "$2b$10$jDBP4r6.cbbe5TpOGkQ/wenlx4cDLBHJy6y89xfJ529j9ilsyYaWK",
+      "email": "marouane.kamalelidrissi@gmail.com",
+      "avatar": "1694565366885-collaboration.png",
+      "id": 4
+    },
+    {
+      "userId": "lmh0ifqb2qwv6lj3a57",
+      "username": "med",
+      "password": "$2b$10$IdZHL0mPjlbtqYRhnrp0Te9UwrjeT2WquFeEFsnE9m4me244FvUK6",
+      "email": "zzd@d.d",
+      "avatar": "1694565442593-browser.png",
+      "id": 5
+    }
+  ]
 }
