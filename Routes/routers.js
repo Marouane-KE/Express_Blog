@@ -3,9 +3,10 @@ const router = express.Router();
 const axios = require("axios");
 
 const { createBlog,getBlogs } = require("../Controllers/blogController");
-const {userRegister } = require("../Controllers/usersController");
-const logger =require("../Middleware/logger")
-const upload =require("../Middleware/upload")
+const {userRegister ,userLogin} = require("../Controllers/usersController");
+const logger =require("../Middleware/logger");
+const upload =require("../Middleware/upload");
+const alreadyLoged =require("../Middleware/alreadyLoged");
 const { render } = require("ejs");
 const jwt = require('jsonwebtoken')
 
@@ -20,11 +21,15 @@ router.use(cookies());
 
 
 
-router.get('/authentication',(req,res)=>{
+router.get('/authentication',alreadyLoged,(req,res)=>{
   res.render("authentication")
 })
 // register ###################################################
 router.post('/register',upload.single('avatar'),userRegister)
+
+// ###################################################
+// login ###################################################
+router.post('/login',upload.single('avatar'),userLogin)
 
 // ###################################################
 
