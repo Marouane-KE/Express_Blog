@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="js/index.js"></script>
+    <!-- <link rel="stylesheet" href="styleBlogCards.css"> -->
 </head>
 <body>
+ 
     <div id="form-main">
         <div id="form-div">
           <form method="post" action="/createBlog" enctype="multipart/form-data" class="form" id="form1">
+            
             
             <p class="name">
               <input name="title" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Title" id="name" />
@@ -33,5 +37,8 @@
             </div>
           </form>
         </div>
+    </div>
+    
+    
     </body>
 </html>

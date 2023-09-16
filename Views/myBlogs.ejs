@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleBlogCards.css">
+    <script src="/js/index.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <%blogs.forEach(b=>{%>
+    <%filteredBlogs.forEach(b=>{%>
         
-        <div class="blog-item" style="border: 1 solid black;">
+        <div class="blog-item">
             <a href="#">
                 <div class="icon">
                     <img width="60" height="60"  src="/uploads/<%= b.image %>" alt="">
@@ -26,10 +26,11 @@
                 <div class="item-arrow">
                     <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                 </div>
+  
             </a>
-            
+            <a href="" class="edit" data-id="<%= b.id %>">edit</a><br>
+            <a href="" class="delete" data-id="<%= b.id %>">delete</a>
         </div>
         <%})%>
-
 </body>
 </html>

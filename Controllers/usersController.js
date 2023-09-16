@@ -59,7 +59,7 @@ exports.userRegister= async(req,res)=>{
     
       if (result) {
         // Passwords match - User is authenticated
-      const token = jwt.sign({email:email,userId:users.userId,avatar:users.avatar},secret)
+      const token = jwt.sign({email:email,userId:user.userId,avatar:user.avatar},secret)
       
       res.cookie('token_auth',token)
       // res.status(200).json({ message: 'Login successful' });
