@@ -39,10 +39,10 @@ router.post('/login',upload.single('avatar'),userLogin)
 
 
 router.get("/addBlog",logger, (req, res) => { res.render("addBlog")});
-router.get("/myBlogs",logger, getPersonalBlogs);
 router.post("/createBlog", logger,upload.single("image"), createBlog);
 
 router.get("/allBlogs",getBlogs);
+router.get("/myBlogs",logger, getPersonalBlogs);
 
 router.delete("/delete/:id",deleteBlog);
 module.exports = router;

@@ -1,4 +1,22 @@
 {
-  "blogs": [],
-  "users": []
+  "blogs": [
+    {
+      "title": "eaze",
+      "author": "azeazeaz",
+      "description": "eazeaze",
+      "user": "lmmgj0ja0ulceit4ghh9",
+      "image": "1694895248497-collaboration.png",
+      "id": 5
+    }
+  ],
+  "users": [
+    {
+      "user": "lmmgj0ja0ulceit4ghh9",
+      "username": "kamale.elidrissi@gmail.com",
+      "password": "$2b$10$S7H5MpTdK1NE0rw70Dyf4OETzaiWkrkUBbJ9Qng5mpS0p6DDcKzOi",
+      "email": "kamale.elidrissi@gmail.com",
+      "avatar": "1694894674264-collaboration.png",
+      "id": 1
+    }
+  ]
 }

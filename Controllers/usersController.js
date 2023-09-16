@@ -19,7 +19,7 @@ exports.userRegister= async(req,res)=>{
     }
     const saltRounds = 10;
     const avatar = req.file
-    const userId=Date.now().toString(36) + Math.random().toString(36).slice(2)
+    const user=Date.now().toString(36) + Math.random().toString(36).slice(2)
     // console.log(avatar)
 
     bcrypt.hash(password, saltRounds, (err, hash) => {
@@ -27,7 +27,7 @@ exports.userRegister= async(req,res)=>{
           res.status(500).json({ error: 'Failed to hash password' });
           
         }
-         const userData ={userId:userId,
+         const userData ={user:user,
             username:username,
             password:hash,
             email:email,
@@ -38,7 +38,7 @@ exports.userRegister= async(req,res)=>{
     });
 
     
-    const token = jwt.sign({email:email,userId:userId,avatar:avatar.filename},secret)
+    const token = jwt.sign({email:email,user:user,avatar:avatar.filename},secret)
     res.cookie('token_auth',token)
     res.redirect('/allBlogs')
   }
@@ -59,7 +59,7 @@ exports.userRegister= async(req,res)=>{
     
       if (result) {
         // Passwords match - User is authenticated
-      const token = jwt.sign({email:email,userId:user.userId,avatar:user.avatar},secret)
+      const token = jwt.sign({email:email,user:user.user,avatar:user.avatar},secret)
       
       res.cookie('token_auth',token)
       // res.status(200).json({ message: 'Login successful' });
