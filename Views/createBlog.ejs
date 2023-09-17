@@ -128,24 +128,23 @@
 				<div class="col-lg-6 col-md-10">
 					<div class="contact-text">
 						<h4 class="title">
-							If you would like to join us on our journey around the world and beyond, then you can follow
-							us on a social media channels
+							Add your blogs and share your ideas
 						</h4>
-						<div class="infomations">
-							<h4 class="title">Have a question ?</h4>
-							<p>Contact us at : <span>example@mail.com</span></p>
-						</div>
+						
 						<div class="contact-form">
-							<form action="#">
+							<form method="post" action="/createBlog2" enctype="multipart/form-data">
 								<div class="row">
 									<div class="col-lg-6">
-										<input type="text" placeholder="Name*">
-									</div>
-									<div class="col-lg-6">
-										<input type="email" placeholder="Email*">
+										<input type="text" name="title" placeholder="Title*">
 									</div>
 									<div class="col-12">
-										<textarea placeholder="Your message"></textarea>
+										<textarea placeholder="Small description" name="description"></textarea>
+									</div>
+									<div class="col-12">
+										<textarea placeholder="Blog Details" name="blogDetails"></textarea>
+									</div>
+									<div class="col-lg-6">
+										<input type="file" name="image">
 									</div>
 									<div class="col-12 text-center">
 										<button type="submit">Submit</button>

@@ -423,7 +423,7 @@ header .header-right > div {
 }
 
 header .search-btn,
-header .shoping-cart-btn,
+header .logout-cart-btn,
 header .offcanvas-btn {
     margin-left: 15px;
     line-height: 1;
@@ -432,7 +432,7 @@ header .offcanvas-btn {
 
 @media (max-width: 575px) {
     header .search-btn,
-    header .shoping-cart-btn,
+    header .logout-cart-btn,
     header .offcanvas-btn {
         margin-left: 10px;
     }
@@ -551,11 +551,11 @@ header .search-area .search-form.search-open form {
     transform: translate(0px, 0px);
 }
 
-header .shoping-cart-btn {
+header .logout-cart-btn {
     position: relative;
 }
 
-header .shoping-cart-btn .count {
+header .logout-cart-btn .count {
     position: absolute;
     font-size: 12px;
     background-color: #484848;

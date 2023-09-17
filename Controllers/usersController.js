@@ -38,7 +38,7 @@ exports.userRegister= async(req,res)=>{
     });
 
     
-    const token = jwt.sign({email:email,user:user,avatar:avatar.filename},secret)
+    const token = jwt.sign({email:email,username:username,user:user,avatar:avatar.filename},secret)
     res.cookie('token_auth',token)
     res.redirect('/home')
   }
@@ -59,7 +59,7 @@ exports.userRegister= async(req,res)=>{
     
       if (result) {
         // Passwords match - User is authenticated
-      const token = jwt.sign({email:email,user:user.user,avatar:user.avatar},secret)
+      const token = jwt.sign({email:email,username:user.username,user:user.user,avatar:user.avatar},secret)
       
       res.cookie('token_auth',token)
       // res.status(200).json({ message: 'Login successful' });
@@ -73,6 +73,6 @@ exports.userRegister= async(req,res)=>{
 
   exports.logout=(req, res) => {
     res.clearCookie('token_auth');
-    res.redirect('/allBlogs'); 
+    res.redirect('/home'); 
  
 }

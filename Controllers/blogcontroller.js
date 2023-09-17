@@ -5,14 +5,16 @@ const jwt =require("jsonwebtoken");
 
 exports.createBlog=(req,res)=>{
     
-    const {title,author,description}=req.body;
+    const {title,description,blogDetails}=req.body;
     const image=req.file
     const user = req.user
+    const author = req.username
+    
   //  console.log(user)
 
-    axios.post('http://localhost:8100/blogs',{title,author,description,user,image:image.filename})
+    axios.post('http://localhost:8100/blogs',{title,author,description,blogDetails,user,image:image.filename})
     
-    res.redirect('addBlog')
+    res.redirect('home')
 }
 
 exports.getBlogs=async(req, res) => {
@@ -31,7 +33,7 @@ exports.getPersonalBlogs=async(req, res) => {
     const filteredBlogs = blogs.filter((b) => b.user===user );
     // console.log(filteredBlogs)
     
-    res.render("myBlogs",{filteredBlogs});
+    res.render("profile",{filteredBlogs});
 
   }
 
