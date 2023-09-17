@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <a href="/logout">logout</a>
     <%filteredBlogs.forEach(b=>{%>
         
         <div class="blog-item">
@@ -28,7 +29,7 @@
                 </div>
   
             </a>
-            <a href="" class="edit" data-id="<%= b.id %>">edit</a><br>
+            <a href="/edit/<%= b.id %>" >edit</a><br>
             <a href="" class="delete" data-id="<%= b.id %>">delete</a>
         </div>
         <%})%>

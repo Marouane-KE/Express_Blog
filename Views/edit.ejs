@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+ 
+    <div id="form-main">
+        <div id="form-div">
+          <form method="post" action="/update/<%= blog.id %>" enctype="multipart/form-data"> 
+            <p class="name">
+              <input name="title" value="<%= blog.title %>" type="text"  />
+            </p>
+            <p class="email">
+                <input name="author" value="<%= blog.author %>" type="text"  />
+            </p>           
+            <p class="text">
+                <textarea name="description" ><%= blog.description %></textarea>
+            </p>
+            <p class="name">
+              <input name="image" type="file"/>
+            </p>           
+            <div class="submit">
+              <input type="submit" value="SEND" id="button-blue"/>
+              
+            </div>
+          </form>
+        </div>
+    </div>
+    
+    
+    </body>
+</html>

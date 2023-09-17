@@ -2,8 +2,8 @@ const express = require("express");
 const router = express.Router();
 const axios = require("axios");
 
-const { createBlog,getBlogs,getPersonalBlogs,deleteBlog } = require("../Controllers/blogController");
-const {userRegister ,userLogin} = require("../Controllers/usersController");
+const { createBlog,getBlogs,getPersonalBlogs,deleteBlog,editBlog, updateBlog} = require("../Controllers/blogController");
+const {userRegister ,userLogin,logout} = require("../Controllers/usersController");
 const logger =require("../Middleware/logger");
 const upload =require("../Middleware/upload");
 const alreadyLoged =require("../Middleware/alreadyLoged");
@@ -45,4 +45,14 @@ router.get("/allBlogs",getBlogs);
 router.get("/myBlogs",logger, getPersonalBlogs);
 
 router.delete("/delete/:id",deleteBlog);
+router.get("/edit/:id",editBlog);
+router.post("/update/:id",upload.single("image"),updateBlog);
+
+router.get('/logout', logout);
+
+
+
+
+
+
 module.exports = router;

@@ -8,7 +8,7 @@ exports.createBlog=(req,res)=>{
     const {title,author,description}=req.body;
     const image=req.file
     const user = req.user
-   console.log(user)
+  //  console.log(user)
 
     axios.post('http://localhost:8100/blogs',{title,author,description,user,image:image.filename})
     
@@ -35,17 +35,42 @@ exports.getPersonalBlogs=async(req, res) => {
 
   }
 
-  // const x =await axios.get(`http://localhost:8100/blogs/${id}`)
   // console.log(x.data)
   
   exports.deleteBlog= async (req,res) => {
     const id = req.params.id;
-    console.log(id)
+    // console.log(id)
     axios.delete('http://localhost:8100/blogs/'+id)
     .then(()=>{
       res.status(204).send("blog deleted")
     }).catch(()=>{
       return res.status(500).send('server problem')
     })
-
+    
   }
+  exports.editBlog= async (req,res)=>{
+    const id = req.params.id;
+    const api = await axios.get('http://localhost:8100/blogs/'+id)
+    const blog = await api.data
+    
+    res.render('edit',{blog})
+  }
+
+  exports.updateBlog= async (req,res)=>{
+    console.log(req.body,req.file)
+    const id = req.params.id;
+    const api = await axios.get('http://localhost:8100/blogs/'+id)
+    const blog = await api.data
+    console.log(blog)
+    
+    const updateBlog = {
+      title: req.body.title,
+      author: req.body.author,
+      description: req.body.description,
+      image: req.file?req.file.filename:blog.image    
+    }
+    axios.patch('http://localhost:8100/blogs/'+id , updateBlog).then(()=>{
+      res.redirect('/myBlogs')
+    })
+  }
+  

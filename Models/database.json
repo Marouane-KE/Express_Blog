@@ -1,12 +1,28 @@
 {
   "blogs": [
     {
-      "title": "eaze",
+      "title": "marouane",
       "author": "azeazeaz",
       "description": "eazeaze",
       "user": "lmmgj0ja0ulceit4ghh9",
-      "image": "1694895248497-collaboration.png",
+      "image": "1694913332385-idea (1).png",
       "id": 5
+    },
+    {
+      "title": "zaaaaaaaaaaaaaaaaaaaaaaaa",
+      "author": "eeeeeeezzzzzzz",
+      "description": "dddddddddddddddddd",
+      "user": "lmmgj0ja0ulceit4ghh9",
+      "image": "1694897444193-collaboration.png",
+      "id": 6
+    },
+    {
+      "title": "moch",
+      "author": "ftz",
+      "description": "moch cute kla zbda",
+      "user": "lmnc4qcc6flswp0202",
+      "image": "1694947826371-js.png",
+      "id": 7
     }
   ],
   "users": [
@@ -17,6 +33,14 @@
       "email": "kamale.elidrissi@gmail.com",
       "avatar": "1694894674264-collaboration.png",
       "id": 1
+    },
+    {
+      "user": "lmnc4qcc6flswp0202",
+      "username": "fatima zahrae",
+      "password": "$2b$10$5eAheB8A5kAIV.45sBY/TOOoJ1V0Yo6FBuS8aKOutnw0pGl809DjK",
+      "email": "ftz@f.com",
+      "avatar": "1694947755497-browser.png",
+      "id": 2
     }
   ]
 }

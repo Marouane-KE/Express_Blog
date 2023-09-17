@@ -70,3 +70,9 @@ exports.userRegister= async(req,res)=>{
       }
     });
   }
+
+  exports.logout=(req, res) => {
+    res.clearCookie('token_auth');
+    res.redirect('/allBlogs'); 
+ 
+}
