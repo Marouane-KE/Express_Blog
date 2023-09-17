@@ -57,6 +57,9 @@ router.get("/blogDetails/:id",blogDetails);
 router.post("/update/:id",upload.single("image"),updateBlog);
 
 router.get('/logout', logout);
+router.get('/about', (req,res)=>{res.render('about')});
+router.get('/comingSoon', (req,res)=>{res.render('comingSoon')});
+
 
 
 router.use((req, res, next) => res.render("404"));
