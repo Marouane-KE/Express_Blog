@@ -8,7 +8,7 @@
 	<meta name="description" content="" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<!--====== Title ======-->
-	<title>404</title>
+	<title> Blog Single </title>
 	<!--====== Favicon Icon ======-->
 	<link rel="shortcut icon" href="../assets/img/favicon.ico" type="img/png" />
 	<!--====== Animate Css ======-->
@@ -37,7 +37,7 @@
 		<div class="container-fluid">
 			<div class="d-flex align-items-center justify-content-between">
 				<div class="site-logo">
-					<a href="/home"><img src="assets/img/logo.png" alt="Genial"></a>
+					<a href="/home"><img src="../assets/img/logo.png" alt="Genial"></a>
 				</div>
 				<div class="header-right">
 					<div class="search-area">
@@ -89,6 +89,7 @@
 								<li>
 									<a href="shop.html">Shop</a>
 									<ul class="submenu">
+										<li><a href="shop.html">Shop</a></li>
 										<li><a href="product-details.html">Shop Details -A</a></li>
 										<li><a href="product-details-2.html">Shop Details -B</a></li>
 										<li><a href="cart.html">Cart</a></li>
@@ -114,85 +115,70 @@
 	</header>
 	<!--====== Header part end ======-->
 
-	<!--====== 404 Section Start ======-->
-	<section class="error-section">
-		<div class="container">
-			<div class="error-text text-center">
-				<h1>
-					OOPS! <span>404</span> Page Not Found
-				</h1>
-			</div>
-		</div>
-	</section>
-	<!--====== 404 Section End ======-->
+	<!--====== Post Details Start ======-->
+	<section class="post-details-area">
+		<div class="container container-1000">
+			<div class="post-details">
+				<div class="entry-header">
+					<h2 class="title"><%= blog.title %></h2>
+					<ul class="post-meta">
+						<li>September 07 - 2020</li>
+						<li><a href="#">Design,</a><a href="#">Travel,</a><a href="#">photography</a></li>
+					</ul>
+					<p class="short-desc">
+						<%= blog.description %>
+					</p>
+				</div>
+				<div class="entry-media text-center">
+					<img src="/uploads/<%= blog.image %>" alt="image">
+				</div>
+				<div class="entry-content">
+					<p class="has-dropcap">
+						<%= blog.description %>
+					</p>
+					
+				</div>
+				<div class="entry-footer">
+					<div class="post-tags">
+						<span>Tag:</span>
+						<a href="#">burger,</a>
+						<a href="#">pixxa,</a>
+						<a href="#">drink,</a>
+						<a href="#">hot,</a>
+						<a href="#">spacial,</a>
+					</div>
+					<div class="social-share">
+						<span>Share:</span>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fas fa-heart"></i></a>
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+					</div>
+					<div class="post-author">
+						
+						<h5><a href="#"><%= blog.author %></a></h5>
+						<p>Article Writer, Senior Designer, Wordpress Developer Father of 2 Daughters</p>
+					</div>
+				</div>
+				<div class="post-nav">
 
-	<!--====== Instagram Area Start ======-->
-	<section class="instagram-section border-top">
-		<div class="container-fluid p-0">
-			<h5 class="instagram-title">
-				Follow Us <span class="instagram-icon"><i class="fab fa-instagram"></i></span> Instagram
-			</h5>
-			<div class="instagram-images">
-				<div class="image">
-					<img src="assets/img/instagram/01.jpg" alt="Instagram-image">
-					<a class="instagram-link" href="#"><i class="fab fa-instagram"></i></a>
+					<div class="prev-post">
+						  
+				<a href="/blogDetails/<%= blog.id - 1 %>"><i class="far fa-angle-left"></i></a>    <span class="title">Previous Post</span>
+					</div>
+					
+					<div class="next-post">
+						<span class="title">Next Post</span><a href="/blogDetails/<%= blog.id + 1 %>"><i class="far fa-angle-right"></i></a>
+					</div>
 				</div>
-				<div class="image">
-					<img src="assets/img/instagram/02.jpg" alt="Instagram-image">
-					<a class="instagram-link" href="#"><i class="fab fa-instagram"></i></a>
-				</div>
-				<div class="image">
-					<img src="assets/img/instagram/03.jpg" alt="Instagram-image">
-					<a class="instagram-link" href="#"><i class="fab fa-instagram"></i></a>
-				</div>
-				<div class="image">
-					<img src="assets/img/instagram/04.jpg" alt="Instagram-image">
-					<a class="instagram-link" href="#"><i class="fab fa-instagram"></i></a>
-				</div>
-				<div class="image">
-					<img src="assets/img/instagram/05.jpg" alt="Instagram-image">
-					<a class="instagram-link" href="#"><i class="fab fa-instagram"></i></a>
-				</div>
-				<div class="image">
-					<img src="assets/img/instagram/06.jpg" alt="Instagram-image">
-					<a class="instagram-link" href="#"><i class="fab fa-instagram"></i></a>
-				</div>
-				<div class="image">
-					<img src="assets/img/instagram/07.jpg" alt="Instagram-image">
-					<a class="instagram-link" href="#"><i class="fab fa-instagram"></i></a>
-				</div>
-				<div class="image">
-					<img src="assets/img/instagram/01.jpg" alt="Instagram-image">
-					<a class="instagram-link" href="#"><i class="fab fa-instagram"></i></a>
-				</div>
-				<div class="image">
-					<img src="assets/img/instagram/02.jpg" alt="Instagram-image">
-					<a class="instagram-link" href="#"><i class="fab fa-instagram"></i></a>
-				</div>
-				<div class="image">
-					<img src="assets/img/instagram/03.jpg" alt="Instagram-image">
-					<a class="instagram-link" href="#"><i class="fab fa-instagram"></i></a>
-				</div>
-				<div class="image">
-					<img src="assets/img/instagram/04.jpg" alt="Instagram-image">
-					<a class="instagram-link" href="#"><i class="fab fa-instagram"></i></a>
-				</div>
-				<div class="image">
-					<img src="assets/img/instagram/05.jpg" alt="Instagram-image">
-					<a class="instagram-link" href="#"><i class="fab fa-instagram"></i></a>
-				</div>
-				<div class="image">
-					<img src="assets/img/instagram/06.jpg" alt="Instagram-image">
-					<a class="instagram-link" href="#"><i class="fab fa-instagram"></i></a>
-				</div>
-				<div class="image">
-					<img src="assets/img/instagram/07.jpg" alt="Instagram-image">
-					<a class="instagram-link" href="#"><i class="fab fa-instagram"></i></a>
-				</div>
+				
 			</div>
+			
 		</div>
 	</section>
-	<!--====== Instagram Area End ======-->
+	<!--====== Post Details End ======-->
+
+	
 
 	<!--====== Footer Area Start ======-->
 	<footer>
@@ -272,23 +258,23 @@
 	<!--====== Footer Area End ======-->
 
 	<!--====== jquery js ======-->
-	<script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
-	<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+	<script src="../assets/js/vendor/modernizr-3.6.0.min.js"></script>
+	<script src="../assets/js/vendor/jquery-1.12.4.min.js"></script>
 	<!--====== Bootstrap js ======-->
-	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/popper.min.js"></script>
+	<script src="../assets/js/bootstrap.min.js"></script>
+	<script src="../assets/js/popper.min.js"></script>
 	<!--====== Slick js ======-->
-	<script src="assets/js/slick.min.js"></script>
+	<script src="../assets/js/slick.min.js"></script>
 	<!--====== Images Loaded ======-->
-	<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+	<script src="../assets/js/imagesloaded.pkgd.min.js"></script>
 	<!--====== Isotope js ======-->
-	<script src="assets/js/isotope.pkgd.min.js"></script>
+	<script src="../assets/js/isotope.pkgd.min.js"></script>
 	<!--====== Magnific Popup js ======-->
-	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="../assets/js/jquery.magnific-popup.min.js"></script>
 	<!--====== Nice Select js ======-->
-	<script src="assets/js/jquery.nice-select.min.js"></script>
+	<script src="../assets/js/jquery.nice-select.min.js"></script>
 	<!--====== Main js ======-->
-	<script src="assets/js/main.js"></script>
+	<script src="../assets/js/main.js"></script>
 </body>
 
 </html>

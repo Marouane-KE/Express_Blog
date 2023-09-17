@@ -21,7 +21,7 @@ exports.getBlogs=async(req, res) => {
     let blogs =await fetchBlogs.data;
     // console.log(blogs)
     
-    res.render("allBlogs",{blogs});
+    res.render("home",{blogs});
 
   }
 exports.getPersonalBlogs=async(req, res) => {
@@ -54,6 +54,13 @@ exports.getPersonalBlogs=async(req, res) => {
     const blog = await api.data
     
     res.render('edit',{blog})
+  }
+  exports.blogDetails= async (req,res)=>{
+    const id = req.params.id;
+    const api = await axios.get('http://localhost:8100/blogs/'+id)
+    const blog = await api.data
+    
+    res.render('blogDetails',{blog})
   }
 
   exports.updateBlog= async (req,res)=>{

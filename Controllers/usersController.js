@@ -40,7 +40,7 @@ exports.userRegister= async(req,res)=>{
     
     const token = jwt.sign({email:email,user:user,avatar:avatar.filename},secret)
     res.cookie('token_auth',token)
-    res.redirect('/allBlogs')
+    res.redirect('/home')
   }
   // login ##################################################
   exports.userLogin=async (req,res)=>{
@@ -63,7 +63,7 @@ exports.userRegister= async(req,res)=>{
       
       res.cookie('token_auth',token)
       // res.status(200).json({ message: 'Login successful' });
-      res.redirect('/allBlogs')
+      res.redirect('/home')
       } else {
         // Passwords don't match - Invalid credentials
         return res.status(401).json({ error: 'Invalid credentials' });
