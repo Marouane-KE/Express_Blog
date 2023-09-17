@@ -11,9 +11,9 @@ const logger =(req,res,next)=>{
     if(!decoded){
          res.redirect('/authentication')
     }
-    const {email,image,user,username } = decoded
+    const {email,avatar,user,username } = decoded
     req.email = email
-    req.image = image
+    req.avatar = avatar
     req.user = user
     req.username=username
     next()

@@ -18,22 +18,28 @@ exports.createBlog=(req,res)=>{
 }
 
 exports.getBlogs=async(req, res) => {
-
+  const token = req.token
     let fetchBlogs= await axios.get('http://localhost:8100/blogs');
     let blogs =await fetchBlogs.data;
     // console.log(blogs)
     
-    res.render("home",{blogs});
+    res.render("home",{blogs , token});
 
   }
 exports.getPersonalBlogs=async(req, res) => {
     const user = req.user
+    const avatar =req.avatar
+    
+    const username =req.username
+    
+    
+    const token = req.token
     let fetchBlogs= await axios.get('http://localhost:8100/blogs');
     let blogs =await fetchBlogs.data;
     const filteredBlogs = blogs.filter((b) => b.user===user );
     // console.log(filteredBlogs)
     
-    res.render("profile",{filteredBlogs});
+    res.render("profile",{filteredBlogs,token,avatar,username});
 
   }
 
@@ -52,17 +58,19 @@ exports.getPersonalBlogs=async(req, res) => {
   }
   exports.editBlog= async (req,res)=>{
     const id = req.params.id;
+    const token = req.token;
     const api = await axios.get('http://localhost:8100/blogs/'+id)
     const blog = await api.data
     
-    res.render('editMyBlogs',{blog})
+    res.render('editMyBlogs',{blog , token})
   }
   exports.blogDetails= async (req,res)=>{
     const id = req.params.id;
+    const token = req.token;
     const api = await axios.get('http://localhost:8100/blogs/'+id)
     const blog = await api.data
     
-    res.render('blogDetails',{blog})
+    res.render('blogDetails',{blog ,token})
   }
 
   exports.updateBlog= async (req,res)=>{
