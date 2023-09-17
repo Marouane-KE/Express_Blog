@@ -35,6 +35,15 @@
       "user": "lmnc4qcc6flswp0202",
       "image": "1694975302402-Dating While Studying AbroadâMaximize Fun, Minimize Heartbreak.jpeg",
       "id": 13
+    },
+    {
+      "title": "Babaaaa",
+      "author": "kamale.elidrissi@gmail.com",
+      "description": "zwin",
+      "blogDetails": "wa3r",
+      "user": "lmmgj0ja0ulceit4ghh9",
+      "image": "1694979388860-idea (1).png",
+      "id": 14
     }
   ],
   "users": [
@@ -53,6 +62,38 @@
       "email": "ftz@f.com",
       "avatar": "1694947755497-browser.png",
       "id": 2
+    },
+    {
+      "user": "lmntucsicygvzuswz7w",
+      "username": "a.elidrissigmail.com",
+      "password": "$2b$10$2Y2YXRYOAwJdIUiB8xGDpuvdIyHvqpWBnley28v.xAn.Qs3KIJFEy",
+      "email": "a.elidrissigmail.com",
+      "avatar": "1694977504545-collaboration.png",
+      "id": 3
+    },
+    {
+      "user": "lmntv9a6c6ep9oio00k",
+      "username": "ass.elidrissigmail.com",
+      "password": "$2b$10$osDW1lstXHpygBcOjzaoYeCOmfY9LkPoyCGOkexmil.ZfUoTA9xva",
+      "email": "ass.elidrissi@gmail.com",
+      "avatar": "1694977546659-addBlogImage.jpg",
+      "id": 4
+    },
+    {
+      "user": "lmnup6t4tom3s4smja",
+      "username": "Kalal",
+      "password": "$2b$10$273NZeJlVqK8fdPM8GdhzeeR4saZ/52BRYc1.1kM4uNg0t7tgfU3G",
+      "email": "marouane.kamalelidrissi@gmail.com",
+      "avatar": "1694978943122-idea (1).png",
+      "id": 5
+    },
+    {
+      "user": "lmnv0fjd3djlqyb9o15",
+      "username": "Aissa",
+      "password": "$2b$10$uqKDZrXlqGMtAfSByamAlemawhUVHH6.ngH8vs/tmIOtmeD4YXC4u",
+      "email": "aissa@test.com",
+      "avatar": "1694979467659-check (1).png",
+      "id": 6
     }
   ]
 }

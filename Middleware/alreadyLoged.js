@@ -6,7 +6,7 @@ const alreadyLoged =(req,res,next)=>{
     const token = req.cookies.token_auth
    
     if(token){
-        return res.redirect('/allBlogs')
+        return res.redirect('/home')
     } 
     next()
   }
