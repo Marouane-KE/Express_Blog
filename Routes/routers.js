@@ -38,8 +38,8 @@ router.post('/login',upload.single('avatar'),userLogin)
 
 
 
-router.get("/addBlog",logger, (req, res) => { res.render("addBlog")});
-router.post("/createBlog", logger,upload.single("image"), createBlog);
+// router.get("/addBlog",logger, (req, res) => { res.render("addBlog")});
+// router.post("/createBlog", logger,upload.single("image"), createBlog);
 
 router.get("/addBlog2",logger, (req, res) => { res.render("createBlog")});
 router.post("/createBlog2", logger,upload.single("image"), createBlog);
@@ -47,11 +47,12 @@ router.post("/createBlog2", logger,upload.single("image"), createBlog);
 // router.get("/allBlogs",getBlogs);
 router.get('/home',getBlogs)
 
-router.get("/myBlogs",logger, getPersonalBlogs);
+// router.get("/myBlogs",logger, getPersonalBlogs);
 router.get("/profile",logger, getPersonalBlogs);
 
 router.delete("/delete/:id",deleteBlog);
-router.get("/edit/:id",editBlog);
+// router.get("/edit/:id",editBlog);
+router.get("/editMyBlogs/:id",editBlog);
 router.get("/blogDetails/:id",blogDetails);
 router.post("/update/:id",upload.single("image"),updateBlog);
 

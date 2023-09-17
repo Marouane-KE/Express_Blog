@@ -55,7 +55,7 @@ exports.getPersonalBlogs=async(req, res) => {
     const api = await axios.get('http://localhost:8100/blogs/'+id)
     const blog = await api.data
     
-    res.render('edit',{blog})
+    res.render('editMyBlogs',{blog})
   }
   exports.blogDetails= async (req,res)=>{
     const id = req.params.id;
@@ -74,12 +74,12 @@ exports.getPersonalBlogs=async(req, res) => {
     
     const updateBlog = {
       title: req.body.title,
-      author: req.body.author,
+      blogDetails: req.body.blogDetails,
       description: req.body.description,
       image: req.file?req.file.filename:blog.image    
     }
     axios.patch('http://localhost:8100/blogs/'+id , updateBlog).then(()=>{
-      res.redirect('/myBlogs')
+      res.redirect('/profile')
     })
   }
   

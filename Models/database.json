@@ -1,17 +1,10 @@
 {
   "blogs": [
     {
-      "title": "aazeaze",
-      "author": "kamale.elidrissi@gmail.com",
-      "description": "azeazezaeae",
-      "user": "lmmgj0ja0ulceit4ghh9",
-      "image": "1694968991045-addBlogImage.jpg",
-      "id": 10
-    },
-    {
       "title": "Lorem",
       "author": "ana",
       "description": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. ",
+      "blogDetails": "Adipiscing elit com-modo ligula eget dolor Morlem ipsuim dolor sit amiet nec, isc thua sdfk onsec tetuer adipi scing elit. Aenean commeod ligula eget dolor Cuem sociis thena toquhte thigp enatibus et magnis dis partu rient montes. Morlem ipsum doelor sit amet nec penatib et thjem\r\n\t\t\t\t\t\tagnis dis part urient montes. Morlem ipsum dolor sit amet nerc, conseec tetuer adipiscing elit.Aenean commodo ligulaits eget dolior. Aenean type massa. Cum sociis nato que pena tibus et magnis dis partu rient moentes. Morlm ipsum dolor tibushrde set amet nec, consec tetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       "user": "lmmgj0ja0ulceit4ghh9",
       "image": "1694964594221-edit.png",
       "id": 9
@@ -35,12 +28,12 @@
       "id": 12
     },
     {
-      "title": "Dating While Studying Abroad—Maximize Fun, Minimize Heartbreak",
+      "title": "hehe Dating While Studying Abroad—Maximize Fun, Minimize Heartbreak",
       "author": "fatima zahrae",
       "description": "When it comes to creating is a website for your busi-ness, an attreactive design will only get\r\nyou far. With people increasingly using their tablets and smartphones and website for your business, an attractive design will only get you far. With people increasingly using theirtablets and smartphones shop online,...",
       "blogDetails": "Adipiscing elit com-modo ligula eget dolor Morlem ipsuim dolor sit amiet nec, isc thua sdfk onsec tetuer adipi scing elit. Aenean commeod ligula eget dolor Cuem sociis thena toquhte thigp enatibus et magnis dis partu rient montes. Morlem ipsum doelor sit amet nec penatib et thjem\r\n\t\t\t\t\t\tagnis dis part urient montes. Morlem ipsum dolor sit amet nerc, conseec tetuer adipiscing elit.Aenean commodo ligulaits eget dolior. Aenean type massa. Cum sociis nato que pena tibus et magnis dis partu rient moentes. Morlm ipsum dolor tibushrde set amet nec, consec tetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       "user": "lmnc4qcc6flswp0202",
-      "image": "1694970278373-Dating While Studying AbroadâMaximize Fun, Minimize Heartbreak.jpeg",
+      "image": "1694975302402-Dating While Studying AbroadâMaximize Fun, Minimize Heartbreak.jpeg",
       "id": 13
     }
   ],
