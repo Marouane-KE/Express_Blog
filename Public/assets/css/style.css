@@ -406,7 +406,7 @@ div#preloader .line:nth-of-type(4) {
 
 /*======= Header =======*/
 header {
-    padding: 35px 0;
+    padding: 8px 0;
 }
 
 header .header-right {
@@ -796,7 +796,7 @@ header.sticky-header.sticky-on {
     -webkit-animation: sticky 1.2s;
     animation: sticky 1.2s;
     background-color: #fff;
-    padding: 25px 0;
+    padding: 8px 0;
     -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.02);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.02);
 }

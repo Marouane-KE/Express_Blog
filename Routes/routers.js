@@ -33,11 +33,6 @@ router.post('/login',upload.single('avatar'),userLogin)
 
 // ###################################################
 
-
-
-
-
-
 // router.get("/addBlog",logger, (req, res) => { res.render("addBlog")});
 // router.post("/createBlog", logger,upload.single("image"), createBlog);
 
