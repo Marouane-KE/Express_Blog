@@ -51,7 +51,7 @@ router.get('/comingSoon',sendToken, (req,res)=>{const token = req.token; res.ren
 
 
 
-router.use(sendToken,(req, res, next) => res.render("404"));
+router.use(sendToken,(req, res, next) => {const token = req.token; res.render("404",{token})});
 
 
 module.exports = router;
